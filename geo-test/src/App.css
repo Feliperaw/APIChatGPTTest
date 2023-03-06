@@ -1,8 +1,8 @@
 .App {
   text-align: center;
   display: flex;
-  background-color: #282c34;
-  color: white;
+  background-color: #FBFBFB;
+  color: #202020;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -13,25 +13,38 @@
 .sidemenu {
   width: 280px;
   padding: 40px;
-  background-color: #251B2F;
+  background-color: #FBFBFB;
 }
 
 .chatbox {
   flex: 1;
-  background-color: #262235;
+  background-color:#EDEDED;
   position: relative;
 }
 
 .side-menu-button {
+  margin-top: 20px;
   padding: 12px;
-  border: 1px solid white;
+  border: 1px solid #BF0413;
   border-radius: 5px;
   text-align: left;
   transition: ease 0.25s all;
 }
 
+.sidemenu-title {
+
+  padding: 12px;
+  font-size: 46px;
+  background-image: linear-gradient(43deg, #ED213A 0%, #93291E 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-align: center;
+
+}
+
 .side-menu-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 67, 67, 0.2);
 }
 
 .side-menu-button span {
@@ -59,11 +72,11 @@
 }
 
 .chat-input-textarea {
-  background-color: #343047;
+  background-color: #E6ECEC;
   width: 100%;
   padding: 12px;
   border-radius: 5px;
-  color: white;
+  color: #202020;
   font-size: 1.25em;
   border: none;
   outline: none;
@@ -71,7 +84,7 @@
 }
 
 .App-header {
-  background-color: #343047;
+  background-color: #EDEDED;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,7 +103,7 @@
 }
 
 .chat-message.geochat{
-  background-color: #423e5a;
+  background-color: rgba(255, 67, 67, 0.1);
 }
 
 .chat-message-center {
@@ -104,14 +117,14 @@
 }
 
 .avatar {
-  background-color: white;
+  background-color: #202020;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
 .avatar.geochat {
-  background: rgb(255, 146, 21);
+  background: #FBFBFB;
   border-radius: 50%;
   width: 40px;
   height: 40px;

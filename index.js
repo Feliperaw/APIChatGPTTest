@@ -7,7 +7,7 @@ const cors = require('cors')
 
 const configuration = new Configuration({
     organization: "org-hPTbnMzEIDvtds5pKo8VMA7s",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 // const response = await openai.listEngines();
@@ -33,7 +33,7 @@ app.post('/', async (req, res) => {
 
         Takeda trata las quejas de productos y otros problemas de manera rápida y transparente. La información o los datos personales de los pacientes se utilizan solo con propósitos legítimos y de acuerdo con los requisitos aplicables. La empresa apoya a las organizaciones de pacientes para mejorar la atención de los pacientes y contribuir a una mejor salud. Takeda evita los conflictos de intereses y la influencia indebida en sus interacciones con las organizaciones de pacientes y sus representantes. La empresa valora su independencia y fomenta la transparencia sobre sus colaboraciones. Takeda se compromete a proveer acceso adecuado a sus productos y servicios a nivel global y actúa con responsabilidad cuando utiliza tecnologías emergentes en sus actividades.
         ${message}`,
-        max_tokens: 100,
+        max_tokens: 500,
         temperature: 0.5,
     });
     res.json({
